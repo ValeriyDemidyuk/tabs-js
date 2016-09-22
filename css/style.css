@@ -1,0 +1,111 @@
+@import "normalize.css";
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font: 14px/1 "Open Sans", sans-serif;
+    color: #555;
+    background: #fafafa;
+}
+
+.container-tabs {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.container-tabs h1 {
+    padding: 50px 0;
+    font-weight: 400;
+    text-align: center;
+}
+
+.container-tabs p {
+    margin: 0 0 5px;
+    line-height: 1.5;
+}
+
+.tabs {
+    display: inline-block;
+    max-width: 800px;
+    padding: 0;
+    margin: 0 auto;
+
+}
+
+.tab__content {
+    display: none;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.tab {
+    display: inline-block;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #aaa;
+    border: 1px solid #ddd;
+    background: #f1f1f1;
+    border-radius: 3px 3px 0 0;
+}
+
+.tabs :before {
+    font-family: fontawesome;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+.tab-first:before {
+    content: "\f19a";
+}
+
+.tab-second:before {
+    content: "\f17a";
+}
+
+.tab-third:before {
+    content: "\f13b";
+}
+
+.tab-fourth:before {
+    content: "\f13c";
+}
+
+.tab:hover {
+    color: #888;
+    cursor: pointer;
+}
+
+.tab.active {
+    color: #555;
+    border-top: 1px solid #009933;
+    border-bottom: 1px solid #fff;
+    background: #fff;
+}
+
+.open {
+    display: block;
+}
+
+/* media query */
+@media screen and (max-width: 680px) {
+    .tab {
+        font-size: 0;
+    }
+
+    .tab:before {
+        margin: 0;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .tab {
+        padding: 15px;
+    }
+}
